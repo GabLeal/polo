@@ -1,0 +1,135 @@
+    *{
+        padding: 0; margin: 0;
+    }
+    #main{
+        display: grid;   
+        grid-template-areas: "header header" "nav nav" "contentss contentss" "footer footer";
+    }
+
+    .mainHeader{ grid-area: header; background: red; }
+    .mainNav{ grid-area: nav; background: green; }
+    .mainContent{ grid-area: contentss; background: blue; }
+   
+
+
+    /****FOOTER****/
+    .mainFooter{ grid-area:footer; display: grid; grid-template-areas: "contente" "copyright" }
+
+    .footerContent{
+        grid-area: contente; background-color: #000030;
+        color: #DDDDDD;
+    }
+
+    .footerContent{
+        padding: 20px;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .logo img{
+        border-radius: 50%;
+        height: 30vh;
+    }
+
+    .contato{
+        list-style: none;
+        font-size: 1rem;
+        
+    }
+    
+    .contato li{
+        padding: 5px;
+    }
+
+    .contato li i{
+        padding-right: 10px;
+    }
+
+    .redesSociais li a i{
+       padding: 15px;
+        border-radius: 50%;
+        border-bottom: 4px solid #ffffff;
+        border-right: 0px solid #ffffff;
+        border-left: 3px solid rgb(48, 6, 23);
+        border-top: 2px solid rgb(48, 6, 23);
+    }
+
+    .redesSociais li a i:hover{
+
+       /*  border-bottom: 5px solid rgb(48, 6, 23);
+         border-right: 5px solid rgb(48, 6, 23);
+         border-left: 5px solid #ffffff;
+         border-top: 5px solid #ffffff;*/
+         transition:all 0.3s ease;
+         -webkit-transform: scale(1.3);
+         -ms-transform: scale(1.3);
+         transform: scale(1.3);
+     }
+    .redesSociais{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+        padding-top: 15px;
+
+
+    }
+
+    .redesSociais li{
+        padding-right: 30px;
+    }
+
+    .redesSociais a{
+        text-decoration: none;
+        color: #DDDDDD;
+
+    }
+
+    .footerCopyright{
+        grid-area: copyright;
+        background: #000021;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px ;
+    }
+    .footerCopyright img{
+        height: 23px;
+    }
+
+    .footerCopyright h4{
+        color: #ffffff;
+        font-size: 1rem;
+        
+    }
+
+    .fale_conosco h2{
+        padding-bottom: 20px;
+       
+    }
+
+
+    @media screen and (min-width: 992px) {
+        .footerContent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .fale_conosco{
+            padding: 20px;
+        } 
+
+    }
+
+    /*
+    
+    xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+    
+    */
