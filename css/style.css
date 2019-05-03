@@ -53,7 +53,7 @@
     }*/
 
     .backg{
-        height: 90vh!important;
+        height: 100vh!important;
         background-image: linear-gradient(to top,rgba(14,14,14,0.5) 1%,rgba(14,14,14,0.4) 10%);
         display: flex;
         align-items: center;
@@ -62,7 +62,7 @@
 
     .backg p{
         font-family: 'Teko';
-        font-size: 75px;
+        font-size: 50px;
         text-transform: uppercase;
         font-weight: 300;
         color: #fff;
@@ -72,37 +72,32 @@
 
    @media only screen and (max-width: 600px) {
     .backg p{
-        font-size: 56px;
+        font-size: 37px;
   }
 }
 
     @media only screen and (max-width: 500px) {
     .backg p{
-        font-size: 46px;
+        font-size: 26px;
   }
 }
 
     @media only screen and (max-width: 400px) {
     .backg p{
-        font-size: 36px;
+        font-size: 20px;
   }
 }
 
- /* .Banner-mobile {
-    background-position: 50% 210px !important;height: 600px;
-  }*/
-
-
-  /*Sobre nós*/
+  /* SOBRE NÓS */
 
   .textBorder{
-    border-bottom: 3px solid #231a50;
+    border-bottom: 3px solid rgb(48, 6, 23);
     display: inline;
   }
 
   .rowSobre {
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 25px;
     grid-template-columns: 1fr 1fr;
     display: grid;
     
@@ -120,7 +115,7 @@
   }
 
   .rowSobre img {
-    margin-top: 70px;
+    margin-top: 85px;
     vertical-align: middle;
     max-width: 100%;
   }
@@ -131,8 +126,7 @@
       }
 
       .rowSobre img{
-        margin-top: 0px;
-        margin-left: 20px;
+        margin-top: 0;
       }
 
       .textSobre{
@@ -142,22 +136,196 @@
       }
 }
 
-    @media only screen and (max-width: 470px) {
-        .rowSobre img{
-            margin-left: 0px;
-            /*max-width: 110%;*/
+    /* FEJEMG */
 
-        }
-  
+    .rowMej{
+       margin: 50px 0px; 
     }
+
+    .textMej{
+        text-align: justify;
+    }
+
+    .mej {
+        padding: 0px 70px 60px;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+
+    .mejFej{
+        max-width: 55%;
+        margin-left: 100px;
+    }
+
+    .mejBj{
+        max-width: 40%;
+        margin-top: -23px;
+        margin-left: 90px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .mejFej{
+                max-width: 60%;
+                margin-top: 15px;
+        }
+
+        .mejBj{
+            max-width: 45%;
+            margin-left: 70px;
+            margin-top: 0;
+        }
+        
+    }
+
+    @media only screen and (max-width: 800px) {
+        .mejFej{
+                max-width: 60%;
+                margin-top: 15px;
+        }
+
+        .mejBj{
+            max-width: 45%;
+            margin-left: 70px;
+            margin-top: 0;
+        }
+        
+    }
+
+     @media only screen and (max-width: 700px) {
+        .rowMej{
+            padding: 0px 50px 50px;
+        }
+
+        .mejFej{    
+            max-width: 70%;
+            margin-left: 75px;
+        }
+
+        .mejBj{
+            max-width: 55%;
+            margin-left: 40px;
+     
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .rowSobre{
+            padding-bottom: 0;
+            margin-left: 0;
+        }
+
+        .rowMej{
+            margin: 10px 0px;
+            grid-template-columns: 1fr; 
+            padding-bottom: 0px;
+     }
+        .mej{
+            grid-template-columns: 1fr; 
+            padding: 0px 50px 60px;
+        }
+
+        .mejFej{
+            max-width: 50%;
+            margin-top: 30px;
+        }
+
+        .mejBj{
+            margin-left: 115px;
+            max-width: 45%;
+            margin-top: -60px;
+        }
+    }
+    @media only screen and (max-width: 550px){
+        .mejBj{
+            margin-top: -60px;
+            margin-left: 100px;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px){
+        .mejBj{
+            margin-left: 67px;
+        }
+        .mejFej{
+            margin-left: 53px;
+        }
+    }
+
+
+    @media only screen and (max-width: 400px){
+        .titleBorder h3{
+            font-size: 2.80rem;
+        }
+    }
+
+     @media only screen and (max-width: 360px){
+        .titleBorder h3{
+            font-size: 2.30rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px){
+        .titleBorder h3{
+            font-size: 1.30rem;
+        }
+    }
+
+
+
+    /* EVENTOS */
+    .rowEventos {
+        background-color: #000030;
+        padding-top: 50px;
+        margin: 0px 0px 70px 50px;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        
+  }
+
+    .textEventos { 
+        /*margin-right: 30px;*/
+        margin-left: 45px;
+        margin-top: -60px;
+        align-self: center;
+        text-align: justify;
+        width: auto;
+  }
+
+
+  @media only screen and (max-width: 880px) {
+      .rowEventos {
+        margin: 50px 50px;
+        grid-template-columns: 1fr;
+      }
+
+      .textEventos{
+        padding: 0;
+        margin: 0px 20px;
+      }
+}
+
+ @media only screen and (max-width: 600px) {
+    .rowEventos{
+        margin: 40px 0px 20px 0px;
+    }
+
+    .textEventos{
+        padding: 0;
+        margin: 0px 35px;
+      }
+
+}
+
+@media only screen and (max-width: 454px) {
+    .carEventos{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
   
     /***CONTAINER CONTATO***/
-
-    .container_conteudo{
-        height: 100vh;
-        height: 100%;
-    }
 
     .conteudo_info{
         color: #ffffff;
@@ -201,32 +369,9 @@
         overflow: hidden;
         height: 335px;
         /*background-color: red;*/
-        padding-top: 2rem;
+        padding-top: 2.5rem;
        
     }
-
-
-    /*CARROUSSEL BEGIN*/
-     .carroussel_itens{
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-       background-color: #fff;
-        overflow: hidden;
-
-    }
-    .carroussel_itens img{
-        max-width:200px;
-        max-height:150px;
-        width: auto;
-        height: auto;
-
-        display: block;
-        margin: 0 auto;
-    }
-
-
-
-    /*CARROUSSEL END*/
 
 
     /****FOOTER****/
@@ -316,7 +461,6 @@
     }
     .footerCopyright img{
         height: 23px;
-        padding-left: 10px;
     }
 
     .footerCopyright h4{
@@ -331,9 +475,16 @@
     }
 
 
+    .banner-titulo{
+        display: flex; flex-direction: column; align-items: center; 
+    }
+
+ 
+
     @media screen and (min-width: 992px) {
         .semnome{
             padding-left: 0;
+            padding-right: 20rem;
         }
         .footerContent{
             display: flex;
@@ -359,7 +510,7 @@
 
         .map{
              margin: 0 auto;
-             height: 400px;
+             
              width: 600px;
         }
 
@@ -370,6 +521,65 @@
         }
 
     }
+
+    /*Parceiros*/
+        .textBorder2{
+            border-bottom: 3px solid white;
+            display: inline;
+        }
+
+        .parceiros{
+            padding: 50px 0!important;
+            background-color: white;
+
+        }
+
+        .item-carousel {
+            height: 200px!important; 
+            margin: 0 20px!important; 
+            display: grid!important; 
+            align-content: center!important; 
+            justify-content: center!important;
+          }
+          
+          .item-carousel a {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .item-carousel img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+        .slick-prev:before, .slick-next:before{
+            color: black!important;
+        }
+
+            /*CARROUSSEL BEGIN*/
+             .carroussel_itens{
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+               background-color: #fff;
+                overflow: hidden;
+
+            }
+            .carroussel_itens img{
+                max-width:200px;
+                max-height:150px;
+                width: auto;
+                height: auto;
+
+                display: block;
+                margin: 0 auto;
+            }
+
+
+
+    /*CARROUSSEL END*/
 
     /*
     
