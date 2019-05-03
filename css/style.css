@@ -528,35 +528,25 @@
             display: inline;
         }
 
-        .parceiros{
-            padding: 50px 0!important;
-            background-color: #000030;
+        .carroussel-itens{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: #000039!important;
+            overflow: hidden;
 
         }
+        .carroussel-itens img{
+            max-width:200px;
+            max-height:150px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
 
-        .item-carousel {
-            height: 200px!important; 
-            margin: 0 20px!important; 
-            display: grid!important; 
-            align-content: center!important; 
-            justify-content: center!important;
-          }
-          
-          .item-carousel a {
-            width: 150px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          }
-
-          .item-carousel img {
-            max-width: 100%;
-            max-height: 100%;
-          }
 
         .slick-prev:before, .slick-next:before{
-            color: black!important;
+            color: white!important;
         }
 
             /*CARROUSSEL BEGIN*/
